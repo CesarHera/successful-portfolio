@@ -1,0 +1,28 @@
+@import "globals/index";
+@import "globals/colors";
+
+html {
+  background-color: $black;
+} 
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: $white2 $black;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $white2;
+  border-radius: 13px;
+  border: 0px none #ffffff;
+}

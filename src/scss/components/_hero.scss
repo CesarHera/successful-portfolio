@@ -1,0 +1,45 @@
+@import "../globals/colors";
+@import "../globals/typography";
+
+.hero {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+
+  .hero__profile {
+    width: MIN(200px, 50%);
+
+    border-radius: 50%;
+    border: 5px solid $white2;
+
+    overflow: hidden;
+    pointer-events: none;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .hero__greeting {
+    text-align: center;
+
+    color: $white;
+
+    h1,
+    h2 {
+      font-size: $h1;
+    }
+    h1 > i {
+      font-style: normal;
+      text-shadow: 3px 3px 1px $black3, 0px 3px 1px $black3, 3px 0px 1px $black3;
+    }
+  }
+}
