@@ -17,8 +17,8 @@ import euphoDesk from "../../assets/projects/euphoDesk.webp";
 import euphoMobi from "../../assets/projects/euphoMobi.webp";
 import mountDesk from "../../assets/projects/mountDesk.webp";
 import mountMobi from "../../assets/projects/mountMobi.webp";
-import gooDesk from "../../assets/projects/gooDesk.webp";
-import gooMobi from "../../assets/projects/gooMobi.webp";
+import gooDarkDesk from "../../assets/projects/gooDarkDesk.webp";
+import gooDarkMobi from "../../assets/projects/gooDarkMobi.webp";
 import weatherDesk from "../../assets/projects/weatherDesk.webp";
 import weatherMobi from "../../assets/projects/weatherMobi.webp";
 import pokeDesk from "../../assets/projects/pokeDesk.webp";
@@ -29,14 +29,16 @@ const projects = [
   {
     desk: euphoDesk,
     mobi: euphoMobi,
+    slowScroll: true,
   },
   {
     desk: mountDesk,
     mobi: mountMobi,
+    slowScroll: true,
   },
   {
-    desk: gooDesk,
-    mobi: gooMobi,
+    desk: gooDarkDesk,
+    mobi: gooDarkMobi,
   },
   {
     desk: weatherDesk,
@@ -64,7 +66,8 @@ const PersonalProjects = () => {
   };
 
   return (
-    <div className="pProjects">
+    <div className="pProjects" id="projects">
+      <h1>Some of my projects</h1>
       <Slider {...sliderSettings}>
         {projects.map((project, idx) => {
           return (
@@ -74,6 +77,7 @@ const PersonalProjects = () => {
               key={"project" + idx}
               desktop={project.desk}
               mobile={project.mobi}
+              slowScroll={project?.slowScroll}
             />
           );
         })}

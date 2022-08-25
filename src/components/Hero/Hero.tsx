@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
 
       <div className="hero__greeting">
         <h2>Hi!</h2>
-        <h1>I'm <i>Cesar</i></h1>
+        <h1>I'm Cesar</h1>
       </div>
     </section>
   );
