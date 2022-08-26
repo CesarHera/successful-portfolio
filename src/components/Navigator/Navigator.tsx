@@ -5,10 +5,9 @@ import React from "react";
 import "../../scss/components/__navigator.scss";
 
 // assets
-import down from "../../assets/icons/down.webp";
 import github from "../../assets/icons/github.webp";
+import down from "../../assets/icons/down.webp";
 import mail from "../../assets/icons/mail.webp";
-import trans from "../../assets/icons/trans.webp";
 
 const Navigator: React.FC = ({}) => {
   return (

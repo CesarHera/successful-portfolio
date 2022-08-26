@@ -5,6 +5,7 @@ import React from "react";
 import PersonalProjects from "../PersonalProjects/PersonalProjects";
 import ParticleBg from "../Particles/ParticlesBg";
 import Navigator from "../Navigator/Navigator";
+import About from "../About/About";
 import Hero from "../Hero/Hero";
 
 // styles
@@ -20,6 +21,8 @@ const Grid: React.FC = () => {
         <Hero />
 
         <PersonalProjects />
+
+        <About />
       </div>
     </>
   );
