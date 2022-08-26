@@ -5,7 +5,7 @@ import React from "react";
 import profile from "../../assets/img/profile.webp";
 
 // styles
-import "../../scss/components/_hero.scss"
+import "../../scss/components/_hero.scss";
 
 const Hero: React.FC = () => {
   return (

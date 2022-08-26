@@ -2,22 +2,26 @@
 import React from "react";
 
 // components
-import Hero from "../Hero/Hero";
 import PersonalProjects from "../PersonalProjects/PersonalProjects";
+import ParticleBg from "../Particles/ParticlesBg";
 import Navigator from "../Navigator/Navigator";
+import Hero from "../Hero/Hero";
 
 // styles
 import "../../scss/components/_grid.scss";
 
 const Grid: React.FC = () => {
   return (
-    <div className="grid">
-      <Navigator />
-      
-      <Hero />
+    <>
+      <ParticleBg />
+      <div className="grid">
+        <Navigator />
 
-      <PersonalProjects />
-    </div>
+        <Hero />
+
+        <PersonalProjects />
+      </div>
+    </>
   );
 };
 

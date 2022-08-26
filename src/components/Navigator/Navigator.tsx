@@ -13,9 +13,6 @@ import trans from "../../assets/icons/trans.webp";
 const Navigator: React.FC = ({}) => {
   return (
     <ul className="navigator">
-      <a href="#" className="navigator__item">
-        <img src={trans} alt="Translation icon" style={{width: "26px"}} />
-      </a>
       <a href="https://github.com/CesarHera" target={"_blank"} rel="noreferrer" className="navigator__item">
         <img src={github} alt="GitHub icon" />
       </a>

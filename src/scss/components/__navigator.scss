@@ -4,13 +4,13 @@
   z-index: 100;
   position: fixed;
   bottom: 30px;
-  right: calc(50% - (Min(80vw, 400px) / 2));
+  right: calc(50% - (Min(80vw, 350px) / 2));
   
   display: flex;
   justify-content: space-between;
 
   padding: 15px 30px;
-  width: Min(80vw, 400px);
+  width: Min(80vw, 350px);
   border-radius: 50px;
   overflow: hidden;
   
