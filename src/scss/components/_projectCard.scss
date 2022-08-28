@@ -9,11 +9,11 @@
   height: Max(450px, 90vh);
   max-height: 600px;
   padding: 10px;
-  
+
   opacity: 0.5;
   transform: scale(0.95);
   transition: transform 1s, opacity 1s;
-  
+
   @media screen and (max-width: 768px) {
     height: Max(650px, 90vh);
   }
@@ -33,10 +33,11 @@
     width: 95%;
     height: 100%;
 
-    .projectCard__desk, .projectCard__mobile {
+    .projectCard__desk,
+    .projectCard__mobile {
       cursor: n-resize;
     }
-    
+
     .projectCard__desk {
       width: 70%;
       height: 100%;
@@ -58,25 +59,25 @@
         height: 100%;
         object-fit: cover;
         object-position: top center;
-        
+
         transition: object-position 4s ease;
-        
+
         &:hover {
           object-position: bottom center;
         }
       }
     }
-    
+
     .projectCard__mobile {
       position: relative;
       width: 30%;
       height: 100%;
-      
+
       border-radius: 25px;
       border: 5px solid $white;
       box-shadow: 7px 7px 1px $black3, 8px 7px 1px $black3, 3px 0px 1px $black3;
       overflow: hidden;
-      
+
       @media screen and (max-width: 768px) {
         display: none;
       }
@@ -90,18 +91,18 @@
         height: 100%;
         object-fit: cover;
         object-position: top center;
-        
+
         transition: object-position 4s;
-        
+
         &.slowScroll {
           transition: object-position 16s;
         }
-        
+
         &:hover {
           object-position: bottom center;
         }
       }
-      
+
       &::after {
         content: "";
         position: absolute;
@@ -115,6 +116,46 @@
 
         border-radius: 0 0 12px 12px;
         background-color: $white;
+      }
+    }
+
+    .projectCard__mobile--first {
+      display: none;
+
+      @media screen and (max-width: 425px) {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+  
+        transition: background .5s, visibility .5s, color .5s;
+        background: #000b;
+        color: $white;
+  
+        &.hide {
+          background: #0000;
+          color: transparent;
+          pointer-events: none;
+
+          img {
+            filter: opacity(0) invert(1);
+          }
+        }
+
+        img {
+          width: 70px;
+          height: 70px;
+          filter: invert(1) opacity(1);
+
+          transition: filter .5s;
+        }
       }
     }
   }
