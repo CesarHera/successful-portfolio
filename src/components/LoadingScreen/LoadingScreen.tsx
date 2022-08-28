@@ -1,5 +1,5 @@
 // react
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 // styles
 import "../../scss/components/__loadingScreen.scss";
