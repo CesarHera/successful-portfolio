@@ -13,18 +13,22 @@ import "slick-carousel/slick/slick.css";
 import "../../scss/components/_personalProjects.scss";
 
 // assets
-import euphoDesk from "../../assets/projects/euphoDesk.webp";
-import euphoMobi from "../../assets/projects/euphoMobi.webp";
-import mountDesk from "../../assets/projects/mountDesk.webp";
-import mountMobi from "../../assets/projects/mountMobi.webp";
 import gooDarkDesk from "../../assets/projects/gooDarkDesk.webp";
 import gooDarkMobi from "../../assets/projects/gooDarkMobi.webp";
 import weatherDesk from "../../assets/projects/weatherDesk.webp";
 import weatherMobi from "../../assets/projects/weatherMobi.webp";
+import seproDesk from "../../assets/projects/seproDesk.webp";
+import seproMobi from "../../assets/projects/seproMobi.webp";
+import euphoDesk from "../../assets/projects/euphoDesk.webp";
+import euphoMobi from "../../assets/projects/euphoMobi.webp";
+import mountDesk from "../../assets/projects/mountDesk.webp";
+import mountMobi from "../../assets/projects/mountMobi.webp";
+import twinDesk from "../../assets/projects/twinDesk.webp";
+import twinMobi from "../../assets/projects/twinMobi.webp";
 import pokeDesk from "../../assets/projects/pokeDesk.webp";
 import pokeMobi from "../../assets/projects/pokeMobi.webp";
 
-// data
+// projects data
 const projects = [
   {
     desk: euphoDesk,
@@ -37,6 +41,10 @@ const projects = [
     slowScroll: true,
   },
   {
+    desk: twinDesk,
+    mobi: twinMobi,
+  },
+  {
     desk: gooDarkDesk,
     mobi: gooDarkMobi,
   },
@@ -47,6 +55,10 @@ const projects = [
   {
     desk: pokeDesk,
     mobi: pokeMobi,
+  },
+  {
+    desk: seproDesk,
+    mobi: seproMobi,
   },
 ];
 

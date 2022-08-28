@@ -1,0 +1,33 @@
+@import "../globals/colors";
+@import "../globals/typography";
+
+.progressBar {
+  margin: 7px 0;
+
+  .progressBar__title {
+    margin-bottom: 5px;
+    font-size: $h4;
+  }
+
+  .progressBar__barWrapper {
+    width: 100%;
+
+    .progressBar__barContainer {
+      border-radius: 50px;
+      width: 100%;
+    }
+
+    .progressBar__progress {
+      background-color: $white !important;
+      height: 28px !important;
+    }
+
+    .progressBar__label {
+      padding-right: 7px;
+
+      font-weight: 500;
+      font-size: $h4;
+      color: $black;
+    }
+  }
+}

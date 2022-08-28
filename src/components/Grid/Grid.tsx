@@ -5,6 +5,7 @@ import React from "react";
 import PersonalProjects from "../PersonalProjects/PersonalProjects";
 import ParticleBg from "../Particles/ParticlesBg";
 import Navigator from "../Navigator/Navigator";
+import Contact from "../Contact/Contact";
 import About from "../About/About";
 import Hero from "../Hero/Hero";
 
@@ -23,6 +24,8 @@ const Grid: React.FC = () => {
         <PersonalProjects />
 
         <About />
+
+        <Contact />
       </div>
     </>
   );

@@ -9,7 +9,7 @@ import github from "../../assets/icons/github.webp";
 import down from "../../assets/icons/down.webp";
 import mail from "../../assets/icons/mail.webp";
 
-const Navigator: React.FC = ({}) => {
+const Navigator: React.FC = () => {
   return (
     <ul className="navigator">
       <a href="https://github.com/CesarHera" target={"_blank"} rel="noreferrer" className="navigator__item">
