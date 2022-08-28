@@ -8,7 +8,7 @@ import BarField from "../BarField/BarField";
 
 const About: React.FC = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="about__description">
         <h1>Me, myself, and web development</h1>
         <p>I first started as a freelance web desginer, then i got a job as a web
