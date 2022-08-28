@@ -21,11 +21,11 @@ const ProjectCard: React.FC<Props> = ({ id, currentSlide, desktop, mobile, slowS
     >
       <div className="projectCard__content">
         <div className="projectCard__desk">
-          <img loading="lazy" src={desktop} alt="Project in desktop view" />
+          <img src={desktop} alt="Project in desktop view" />
         </div>
 
         <div className="projectCard__mobile">
-          <img loading="lazy" src={mobile} alt="Project in mobile view" className={`${slowScroll && "slowScroll"}`} />
+          <img src={mobile} alt="Project in mobile view" className={`${slowScroll && "slowScroll"}`} />
         </div>
       </div>
     </div>
