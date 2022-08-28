@@ -1,0 +1,47 @@
+@import "../globals/colors";
+@import "../globals/typography";
+
+.about {
+  display: flex;
+  grid-gap: 50px;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+
+  width: Min(80%, 1000px);
+  height: 100%;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+
+    .about__description,
+    .about__technologies {
+      width: 100% !important;
+      height: unset !important;
+    }
+  }
+
+  .about__description,
+  .about__technologies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+    width: 50%;
+
+    color: $white;
+  }
+
+  .about__description {
+    h1 {
+      font-size: $h2;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: $h3;
+      line-height: 1.4;
+    }
+  }
+}

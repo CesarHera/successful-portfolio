@@ -4,17 +4,16 @@ import React from "react";
 // styles
 import "../../scss/components/_projectCard.scss";
 
-// fake assets
-import euphoDesk from "../../assets/projects/GameDev.png";
-import euphoMobile from "../../assets/projects/GameDevMobile.png";
-
 // interfaces
 interface Props {
   id: Number;
   currentSlide: Number;
+  desktop: string;
+  mobile: string;
+  slowScroll?: boolean;
 }
 
-const ProjectCard: React.FC<Props> = ({ id, currentSlide }) => {
+const ProjectCard: React.FC<Props> = ({ id, currentSlide, desktop, mobile, slowScroll }) => {
   return (
     <div
       className={`projectCard ${id === currentSlide && "currentSlide"}`}
@@ -22,11 +21,11 @@ const ProjectCard: React.FC<Props> = ({ id, currentSlide }) => {
     >
       <div className="projectCard__content">
         <div className="projectCard__desk">
-          <img src={euphoDesk} />
+          <img loading="lazy" src={desktop} alt="Project in desktop view" />
         </div>
 
         <div className="projectCard__mobile">
-          <img src={euphoMobile} />
+          <img loading="lazy" src={mobile} alt="Project in mobile view" className={`${slowScroll && "slowScroll"}`} />
         </div>
       </div>
     </div>

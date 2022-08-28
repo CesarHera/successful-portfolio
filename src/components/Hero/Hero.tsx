@@ -5,18 +5,18 @@ import React from "react";
 import profile from "../../assets/img/profile.webp";
 
 // styles
-import "../../scss/components/_hero.scss"
+import "../../scss/components/_hero.scss";
 
 const Hero: React.FC = () => {
   return (
     <section className="hero">
       <div className="hero__profile">
-        <img src={profile} alt="Profile picture" />
+        <img src={profile} alt="Profile" />
       </div>
 
       <div className="hero__greeting">
         <h2>Hi!</h2>
-        <h1>I'm <i>Cesar</i></h1>
+        <h1>I'm Cesar</h1>
       </div>
     </section>
   );

@@ -1,0 +1,46 @@
+@import "../globals/colors";
+@import "../globals/typography";
+
+.loadingScreen {
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  min-height: 100vh;
+
+  background-color: black;
+  color: $white;
+
+  opacity: 1;
+  transition: opacity .5s;
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: $h2;
+  }
+
+  &.fade {
+    opacity: 0;
+  }
+
+  .loadingScreen_bar {
+    width: Min(80%, 650px);
+
+    .progressBar .progressBar__barWrapper .progressBar__progress {
+      height: 35px !important;
+      transition: width 5s ease-in-out 0s !important;
+
+      .progressBar__label {
+        display: none !important;
+      }
+    }
+  }
+}
